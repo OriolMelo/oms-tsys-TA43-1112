@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        @for(character of characters; track character.id){
+            <div class="col-3">
+                <div class="card mr-5 mb-5">
+                    <img class="card-img-top" src="{{character.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">{{character.name}}</h5>
+                        <a routerLink="/character/{{character.id}}" class="btn btn-block btn-primary">See more</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
